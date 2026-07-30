@@ -1,93 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Tayao Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <div class="layout">
 
     <aside class="sidebar">
+
         <h2 class="site-name">Marcus Tayao</h2>
 
         <nav>
             <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
                 <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </aside>
 
     <main>
 
-        <section class="hero" id="about">
-            <h1>Edd Marcus G. Tayao</h1>
+        <section class="hero" id="home">
 
-            <p>
-                Cybersecurity student learning web development.
-            </p>
+            <div class="hero-text">
 
-            <a class="btn" href="#projects">See My Work</a>
+                <h1>Hello, I'm Marcus</h1>
+
+                <p class="intro">
+                    I'm Edd Marcus G. Tayao, a BS Cybersecurity student at Holy Angel University.
+                    I'm currently learning HTML and CSS while building my foundation in
+                    programming, networking, and cybersecurity.
+                </p>
+
+                <a class="btn" href="#projects">View My Projects</a>
+
+            </div>
+
+            <div class="hero-photo">
+
+                <img src="portfolio_photo.jpg"
+                alt="Marcus Tayao"
+                class="profile-picture">   
+            </div>
+
         </section>
 
-        <section class="projects" id="projects">
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Edd Marcus G. Tayao. I am currently a second-year Cybersecurity student at Holy Angel University.
+            </p>
+
+            <p>
+                I enjoy learning about computers, cybersecurity, networking, programming, and web development. In this evolving field, I always try to improve my IT skills by making projects and learning new tech.
+            </p>
+
+            <p>
+                Aside from school-related things, I enjoy playing sports, mainly volleyball, basketball, and tennis. I also enjoy playing video games and listening to music.
+            </p>
+
+        </section>
+
+        <section id="education">
+
+            <h2>Education</h2>
+
+            <div class="education-item">
+
+                <h3>Holy Angel University</h3>
+
+                <p>
+                    Bachelor of Science in Cybersecurity
+                </p>
+
+                <span>2025 - Present</span>
+
+            </div>
+
+            <div class="education-item">
+
+                <h3>Angeles City Science High School</h3>
+
+                <p>
+                    Junior High School & Senior High School
+                </p>
+
+                <span>2019 - 2025</span>
+
+            </div>
+
+            <div class="education-item">
+
+                <h3>Angeles Elementary School</h3>
+
+                <p>
+                    Elementary
+                </p>
+
+                <span>2013 - 2019</span>
+
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+
+                <div>
+
+                    <h3>Programming</h3>
+
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3>Other Skills</h3>
+
+                    <ul class="skills-list">
+                        <li>Cybersecurity</li>
+                        <li>Troubleshooting</li>
+                        <li>Problem Solving</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="projects">
 
             <h2>Projects</h2>
 
-            <article class="card">
-                <img class="card-img" src="" alt="Project 1">
-                <h3 class="card-title">Project name</h3>
-                <p class="card-meta">year</p>
-                <p class="card-desc">
-                    Project desc.
-                </p>
-                <a class="card-link" href="#">View</a>
-            </article>
+            <div class="projects">
 
-            <article class="card">
-                <img class="card-img" src="" alt="Project 2">
-                <h3 class="card-title">Project name</h3>
-                <p class="card-meta">year</p>
-                <p class="card-desc">
-                    Project desc..
-                </p>
-                <a class="card-link" href="#">View</a>
-            </article>
+                <article class="card">
 
-            <article class="card">
-                <img class="card-img" src="" alt="Project 3">
-                <h3 class="card-title">Project name</h3>
-                <p class="card-meta">year</p>
-                <p class="card-desc">
-                    Project desc.
-                </p>
-                <a class="card-link" href="#">View</a>
-            </article>
+                    <img src="project1.jpg"
+                    alt="Portfolio Website"
+                    class="card-img">
 
-            <article class="card">
-                <img class="card-img" src="" alt="Project 4">
-                <h3 class="card-title">Project name</h3>
-                <p class="card-meta">year</p>
-                <p class="card-desc">
-                    Project desc.
-                </p>
-                <a class="card-link" href="#">View</a>
-            </article>
+                    <h3 class="card-title">Portfolio Website</h3>
+
+                    <p class="card-meta">2026</p>
+
+                    <p class="card-desc">
+                        A personal portfolio website created using HTML and CSS
+                        to showcase my profile and projects.
+                    </p>
+
+                    <a class="card-link" href="#">
+                        View Project
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="project2.png"
+                    alt="Portfolio Website"
+                    class="card-img">
+
+                    <h3 class="card-title">Music Player Website</h3>
+
+                    <p class="card-meta">2026</p>
+
+                    <p class="card-desc">
+                        A music player website that displays the lyrics and music video of NewJeans' song "Supernatural".
+                    </p>
+
+                    <a class="card-link" href="#">
+                        View Project
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="projcet3png.png"
+                    alt="Portfolio Website"
+                    class="card-img">
+
+                    <h3 class="card-title">Dating Website</h3>
+
+                    <p class="card-meta">2026</p>
+
+                    <p class="card-desc">
+                        A website that allows users to see other users' info and match with them.
+                    </p>
+
+                    <a class="card-link" href="#">
+                        View Project
+                    </a>
+
+                </article>
+
+                </article>
+
+            </div>
 
         </section>
 
         <footer id="contact">
+
             <h2>Contact</h2>
 
             <p>
-                Email:
-                <a class="nav-link" href="mailto:marcus.tayao723@gmail.com">
-                    marcus.tayao723@gmail.com
-                </a>
+                Feel free to contact me through email.
             </p>
+
+            <p>
+
+                <strong>Email</strong><br>
+
+                <a
+                    class="email-link"
+                    href="mailto:marcus.tayao723@gmail.com">
+
+                    marcus.tayao723@gmail.com
+
+                </a>
+
+            </p>
+
+            <p class="copyright">
+
+                © 2026 Marcus Tayao
+
+            </p>
+
         </footer>
 
     </main>
@@ -95,4 +259,5 @@
 </div>
 
 </body>
+
 </html>

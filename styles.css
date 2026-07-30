@@ -1,137 +1,251 @@
-/* ============================================================
-   MY DESIGN SYSTEM
-   ------------------------------------------------------------
-   background  #ffffff      text/ink   #111111
-   primary     #2563eb      accent     #f59e0b
-   headings    32px / 24px  body       16px
-   spacing     8 / 16 / 24 / 32 px
-   fonts       Arial / Arial
-   ============================================================ */
+/* ==========================================
+   Marcus Tayao Portfolio
+   ========================================== */
 
-body {
-    background: #ffffff;
-    color: #111111;
-    font-family: Arial, sans-serif;
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    min-height: 100vh;
+html{
+    scroll-behavior:smooth;
 }
 
-.sidebar {
-    background-color: #0c2a6b;
-    color: white;
-    padding: 32px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d1117;
+    color:#e6edf3;
+    line-height:1.6;
 }
 
-.site-name {
-    font-size: 24px;
-    color: white;
+/* ---------- Layout ---------- */
+
+.layout{
+    display:grid;
+    grid-template-columns:230px 1fr;
+    min-height:100vh;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+/* ---------- Sidebar ---------- */
+
+.sidebar{
+    background:#161b22;
+    border-right:1px solid #30363d;
+    padding:30px 20px;
+    position:sticky;
+    top:0;
+    height:100vh;
 }
 
-.sidebar li {
-    margin-bottom: 16px;
+.site-name{
+    font-size:24px;
+    margin-bottom:40px;
+    color:#ffffff;
 }
 
-.nav-link {
-    color: #2563eb;
-    text-decoration: none;
-    padding: 8px;
+.sidebar ul{
+    list-style:none;
 }
 
-.nav-link:hover {
-    color: #f59e0b;
+.sidebar li{
+    margin-bottom:18px;
 }
 
-.sidebar .nav-link {
-    color: white;
+.nav-link{
+    color:#c9d1d9;
+    text-decoration:none;
+    transition:.2s;
 }
 
-.sidebar .nav-link:hover {
-    color: #dbeafe;
+.nav-link:hover{
+    color:#58a6ff;
 }
 
-main {
-    padding: 32px;
+/* ---------- Main ---------- */
+
+main{
+    max-width:1100px;
+    padding:50px;
 }
 
-.hero {
-    margin-bottom: 32px;
+section{
+    margin-bottom:80px;
 }
 
-.hero h1 {
-    font-size: 32px;
+h2{
+    font-size:30px;
+    margin-bottom:25px;
+    color:#58a6ff;
 }
 
-.hero p {
-    font-size: 16px;
+h3{
+    margin-bottom:8px;
+    color:white;
 }
 
-.btn {
-    display: inline-block;
-    background: #f59e0b;
-    color: #111111;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
+p{
+    margin-bottom:16px;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
+/* ---------- Hero ---------- */
+
+.hero{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    align-items:center;
+    gap:50px;
+    min-height:100vh;
 }
 
-.projects h2 {
-    grid-column: 1 / -1;
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+    color:white;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    padding: 16px;
-    border: 1px solid #2563eb;
-    border-radius: 8px;
+.intro{
+    font-size:18px;
+    max-width:650px;
 }
 
-.card-img {
-    width: 100%;
-    height: 180px;
-    background: #dddddd;
+/* ---------- Profile ---------- */
+
+.hero-photo{
+    display:flex;
+    justify-content:center;
 }
 
-.card-title {
-    font-size: 24px;
-    margin: 0;
+.profile-picture{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #30363d;
+}
+/* ---------- Button ---------- */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#58a6ff;
+    color:#0d1117;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:6px;
+    font-weight:bold;
 }
 
-.card-meta {
-    color: #666666;
+.btn:hover{
+    background:#79c0ff;
 }
 
-.card-desc {
-    font-size: 16px;
+/* ---------- Education ---------- */
+
+.education-item{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:8px;
+    padding:18px;
+    margin-bottom:18px;
 }
 
-.card-link {
-    color: #2563eb;
-    text-decoration: none;
+.education-item span{
+    color:#8b949e;
 }
 
-footer {
-    margin-top: 32px;
+/* ---------- Skills ---------- */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
 }
 
-.footer a {
-  color: #2563eb;
+.skills-list{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.skills-list li{
+    margin-bottom:10px;
+}
+
+/* ---------- Projects ---------- */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:8px;
+    padding:18px;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card-img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+.card-title{
+    font-size:22px;
+}
+
+.card-meta{
+    color:#8b949e;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.card-desc{
+    flex-grow:1;
+}
+
+.card-link{
+    color:#58a6ff;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.card-link:hover{
+    color:#79c0ff;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    border-top:1px solid #30363d;
+    padding-top:40px;
+}
+
+.email-link{
+    color:#58a6ff;
+    text-decoration:none;
+}
+
+.email-link:hover{
+    color:#79c0ff;
+}
+
+.copyright{
+    color:#8b949e;
+    margin-top:30px;
+    font-size:14px;
 }
