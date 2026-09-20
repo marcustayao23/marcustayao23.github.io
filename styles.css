@@ -83,7 +83,7 @@ p{
     grid-template-columns:2fr 1fr;
     align-items:center;
     gap:50px;
-    min-height:100vh;
+    padding: 40px 0;
 }
 
 .hero h1{
@@ -152,7 +152,7 @@ p{
     margin-bottom:10px;
 }
 
-.projects-controls {
+.project-controls {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
