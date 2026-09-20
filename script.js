@@ -4,7 +4,7 @@ const projectsData = [
     {
         title: "Portfolio Website",
         year: "2026",
-        category: "Web Development",
+        category: "Personal",
         description: "A personal portfolio website created using HTML and CSS to showcase my profile and projects.",
         imgSrc: "project1.jpg",
         link: "#"
@@ -12,7 +12,7 @@ const projectsData = [
     {
         title: "Music Player Website",
         year: "2026",
-        category: "Web Development",
+        category: "Media",
         description: "A music player website that displays the lyrics and music video of NewJeans' song 'Supernatural'.",
         imgSrc: "project2.png",
         link: "#"
@@ -20,17 +20,17 @@ const projectsData = [
     {
         title: "Dating Website",
         year: "2026",
-        category: "Web Development",
+        category: "Interactive",
         description: "A website that allows users to see other users' info and match with them.",
-        imgSrc: "projcet3png.png",
+        imgSrc: "project3.png",
         link: "#"
     },
     {
-        title: "Network Port Scanner",
+        title: "Favorite Things Website",
         year: "2026",
-        category: "Cybersecurity",
-        description: "A Python utility for identifying open ports and active services on a local target network.",
-        imgSrc: "project1.jpg",
+        category: "Personal",
+        description: "A website that showcases my favorite things.",
+        imgSrc: "project4.jpg",
         link: "#"
     }
 ];
