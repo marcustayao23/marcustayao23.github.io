@@ -22,7 +22,7 @@ const projectsData = [
         year: "2026",
         category: "Web Development",
         description: "A website that allows users to see other users' info and match with them.",
-        imgSrc: "project3.png",
+        imgSrc: "projcet3png.png",
         link: "#"
     },
     {
