@@ -30,7 +30,7 @@ const projectsData = [
         year: "2026",
         category: "Personal",
         description: "A website that showcases my favorite things.",
-        imgSrc: "project4.jpg",
+        imgSrc: "project4.png",
         link: "#"
     }
 ];
